@@ -44,7 +44,7 @@ int main() {
 
 // In this approach,
 // First I'm ensuring that b is greater or equal a.
-// than I'm trying to create x such that (b^x) will be minimum but not less than a
-// and (a ^ x) maximum but not greater than a
+// than I'm trying to create x such that (b^x) will be minimum but not less than (a^x)
+// and (a ^ x) maximum but not greater than (b^x)
 
 
