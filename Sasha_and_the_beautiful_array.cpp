@@ -21,6 +21,8 @@ int main() {
 
     Mostafa
 
+    // https://codeforces.com/contest/1929/problem/A
+
     w(x) {
         int n; cin >> n;
 
