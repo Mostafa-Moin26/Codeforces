@@ -24,10 +24,10 @@ int main() {
     // https://codeforces.com/contest/1955/problem/C
 
     w(x) {
-        int n, k; cin >> n >> k;
+        ll n, k; cin >> n >> k;
 
-        vi a(n);
-        int sum = 0;
+        vector<ll> a(n);
+        ll sum = 0;
         for (int i = 0; i < n; ++i) {
             cin >> a[i];
             sum += a[i];
@@ -38,11 +38,11 @@ int main() {
             continue;
         }
 
-        int left = (k + 1) / 2;
-        int right = k / 2;
-        int i = 0;
+        ll left = (k + 1) / 2;
+        ll right = k / 2;
+        ll i = 0;
         while (left >= a[i]) left -= a[i++];
-        int j = n - 1;
+        ll j = n - 1;
         while (right >= a[j]) right -= a[j--];
 
         // cout << i << " " << j << endl;
