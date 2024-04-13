@@ -26,9 +26,7 @@ int main() {
     w(x) {
         int n, m, k; cin >> n >> m >> k;
 
-        int ans = n / m;
-
-        if (n % m != 0) ans++;
+        int ans = n / m + (n % m > 0);
 
         if (k >= (n - ans)) {
             cout << "No" << endl;
