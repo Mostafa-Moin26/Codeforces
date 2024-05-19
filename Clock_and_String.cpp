@@ -13,10 +13,6 @@ typedef vector<pair<int, int>> vip;
 #define ff              first
 #define ss              second
 #define mp              make_pair
-#define REP(i,a,b) for (int i = a; i <= b; i++)
-#define ps(x,y)         fixed<<setprecision(y)<<x
-#define setbits(x)      __builtin_popcountll(x)
-#define zrobits(x)      __builtin_ctzll(x)
 
 int main() {
 
