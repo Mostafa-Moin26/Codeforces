@@ -8,9 +8,6 @@ using namespace std;
 #define pb              push_back
 #define ff              first
 #define ss              second
-#define ps(x,y)         fixed<<setprecision(y)<<x
-#define setbits(x)      __builtin_popcountll(x)
-#define zrobits(x)      __builtin_ctzll(x)
 
 int main() {
 
