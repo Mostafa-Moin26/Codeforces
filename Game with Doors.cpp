@@ -53,3 +53,24 @@ signed main() {
     }
     return 0;
 }
+
+// More optimal code
+   w(x) {
+        int l, L, r, R;  cin >> l >> r >> L >> R;
+
+        int ans;
+
+        if (r < L || R < l) {
+            ans = 1;
+        } else {
+            int upperBound = min(r, R);
+            int lowerBound = max(L, l);
+            ans = upperBound - lowerBound;
+
+            if (l != L) ans++;
+            if (r != R) ans++;
+
+        }
+
+        cout << ans << endl;
+    }
