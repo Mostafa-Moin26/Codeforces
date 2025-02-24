@@ -24,26 +24,30 @@ bool comp(int a, int b) {return a > b;}
 signed main() {
     Mostafa
 
-    // https://codeforces.com/problemset/problem/2032/B
+    // https://codeforces.com/problemset/problem/2030/C
 
     w(x) {
-        int n, k; 
-        cin >> n >> k;
+        int n; 
+        cin >> n;
 
-        if (n == 1) {
-            cout << "1\n1" << endl;
-            continue;
+        string s;
+        cin >> s;
+
+        bool f = false;
+
+        for (int i = 0; i < n - 1; i++) {
+
+            if (s[i] == '1' && s[i + 1] == '1') {
+                f = true;
+                break;
+            }
         }
-        if (k == n || k == 1) {
-            cout << -1 << endl;
-            continue;
+
+        if (f || s[0] == '1' || s[n - 1] == '1') {
+            yes;
+        } else {
+            no;
         }
-
-        int a = k - k % 2;
-        int b = k + 1 + k % 2;
-
-        cout << 3 << endl;
-        cout << 1 << " " << a << " " << b << endl;
     }
     return 0;
 }
